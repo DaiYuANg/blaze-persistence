@@ -38,6 +38,10 @@ public class PagedArrayList<T> extends ArrayList<T> implements PagedList<T> {
     private final int firstResult;
     private final int maxResults;
 
+    public PagedArrayList(){
+        this(null, 0, -1, -1);
+    }
+
     /**
      * Constructs a new empty paged array list.
      *
